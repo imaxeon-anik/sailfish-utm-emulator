@@ -1,0 +1,9 @@
+*.vdi
+*.qcow2
+*.raw
+*.7z
+*.log
+*.sock
+*.ppm
+*.png
+.DS_Store
