@@ -7,3 +7,12 @@
 *.ppm
 *.png
 .DS_Store
+id_*
+*.pem
+*.key
+known_hosts*
+*.ext4
+*.gz
+vmlinuz*
+initrd*
+*.rpm

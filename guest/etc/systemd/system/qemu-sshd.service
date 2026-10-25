@@ -1,0 +1,9 @@
+[Unit]
+After=qemu-network.service sshd-keys.service
+Wants=qemu-network.service sshd-keys.service
+Conflicts=sshd.socket
+[Service]
+ExecStart=/usr/sbin/sshd -D -f /etc/ssh/sshd_config.sdk
+Restart=on-failure
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,10 @@
+[Unit]
+After=connman.service
+[Service]
+Type=oneshot
+ExecStart=/usr/sbin/ip link set enp0s1 up
+ExecStart=/usr/sbin/ip address replace 10.0.2.15/24 dev enp0s1
+ExecStart=/usr/sbin/ip route replace default via 10.0.2.2
+RemainAfterExit=yes
+[Install]
+WantedBy=multi-user.target
